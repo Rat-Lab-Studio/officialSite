@@ -1,8 +1,8 @@
 /* Variables CSS */
 :root {
-    --primary-color: #2ECC71; /* Verde neón/lima para CTA */
-    --secondary-color: #34495E; /* Gris oscuro/azul para fondo de cards */
-    --background-color: #1a1a1a; /* Fondo muy oscuro */
+    --primary-color: #00ff6a; /* Verde neón/lima para CTA */
+    --secondary-color: #1a1a1a; /* Gris oscuro/azul para fondo de cards */
+    --background-color: #232f3a; /* Fondo muy oscuro */
     --text-color: #ecf0f1; /* Texto claro */
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Oswald', sans-serif;
