@@ -35,7 +35,7 @@ a:hover {
 
 /* CABECERA Y NAVEGACIÓN */
 .header {
-    background-color: #111;
+    background-color: #000000;
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -52,11 +52,11 @@ a:hover {
     align-items: flex-start;
 }
 
-.logo {
-    font-family: var(--font-secondary);
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    letter-spacing: 2px;
+.logo-img {
+    height: 80px; /* Define una altura cómoda para escritorio */
+    width: auto;
+    display: block;
+    /*filter: drop-shadow(0 0 5px rgba(46, 204, 113, 0.5));  Efecto neón sutil */
 }
 
 .subtitle {
