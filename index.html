@@ -1,41 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Battery Passport</title>
-  <link rel="icon" type="image/x-icon" href="media/logo.ico" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAT LAB | Estudio de Música | Barcelona</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a href="https://www.vectorenergy.com">
-    <header>
-      <!-- El banner ahora se controla por CSS -->
+
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="logo">RAT LAB</h1>
+            <p class="subtitle">ESTUDIO | BARCELONA</p>
+        </div>
+        <nav class="nav">
+            <a href="#inicio" class="nav-item">Inicio</a>
+            <a href="#antecedentes" class="nav-item">Condiciones</a>
+            <a href="#tarifas" class="nav-item">Tarifas</a>
+            <a href="#contacto" class="nav-item cta-button">Book Now</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </header>
-  </a>
 
-  <main class="main-layout">
-    <div id="content" class="content">
-      <p>Loading data...</p>
-    </div>
-  </main>
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h2>Servicios de Audio Profesional en Barcelona.</h2>
+            <p>Grabación, Mezcla, Mastering y Producción. Tu proyecto musical en las mejores manos.</p>
+            <a href="#tarifas" class="main-cta">Ver Tarifas y Empezar</a>
+        </div>
+    </section>
 
-  <footer id="footer">
-    <div class="socials">
-      <p class="small-text">© 2024 <a href="https://www.vectorenergy.com">vectorenergy.com</a> | Todos los derechos reservados</p>
-      <div class="icons">
-        <a href="https://es.linkedin.com/company/vector-energy-global" target="_blank"><img src="media/linkedin.png" alt="Linkedin"></a>
-        <a href="https://twitter.com/Vector__Energy" target="_blank"><img src="media/twiter.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com/vector__energy/" target="_blank"><img src="media/instagram.png" alt="Instagram"></a>
-        <a href="https://www.facebook.com/profile.php?id=100076281544521" target="_blank"><img src="media/facebook.png" alt="Facebook"></a>
-        <a href="https://www.youtube.com/@Vector_Energy" target="_blank"><img src="media/youtube.png" alt="Youtube"></a>
-      </div>
-      
-    </div>
-  </footer>
+    <section id="antecedentes" class="content-section">
+        <h2 class="section-title">Antecedentes y Condiciones</h2>
+        <div class="card-grid">
 
-  
-  <script type="module" src="js/main.js"></script>
-  <script src="js/imageMapResizer.js"></script>
+            <div class="card">
+                <h3>Política de Pago</h3>
+                [cite_start]<p>Se pagará por adelantado la mitad del servicio acordado antes de iniciar la primera sesión[cite: 15]. [cite_start]La suma faltante se pagará al final del proyecto, antes de la entrega del producto final[cite: 16].</p>
+            </div>
+
+            <div class="card">
+                <h3>Preparación del Proyecto</h3>
+                [cite_start]<p>Antes de la primera sesión, el cliente debe facilitar referencias e ideas para orientar el proyecto[cite: 18, 19]. [cite_start]Cualquier variación del presupuesto frenará el trabajo hasta alcanzar un nuevo acuerdo[cite: 20].</p>
+            </div>
+
+            <div class="card">
+                <h3>Normativa Presencial (No Online)</h3>
+                [cite_start]<p>El cliente debe facilitar todos los archivos necesarios antes de la primera sesión presencial[cite: 21]. [cite_start]El cliente estará de forma presencial únicamente durante 2 sesiones (Grabación y Mastering)[cite: 22].</p>
+            </div>
+
+            <div class="card">
+                <h3>Respeto y Colaboración</h3>
+                [cite_start]<p>Se pide compromiso, profesionalidad y respeto al equipo de RatLab[cite: 82]. [cite_start]Solo deben asistir al estudio las personas que realmente van a colaborar en el producto (ej. beatmakers, músicos)[cite: 84, 85].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarifas" class="content-section pricing-section">
+        <h2 class="section-title">Tarifas</h2>
+
+        <div class="tabs">
+            <button class="tab-button active" data-target="tarifas-online">Online</button>
+            <button class="tab-button" data-target="tarifas-presenciales">Presenciales</button>
+            <button class="tab-button" data-target="tarifas-beats">Beats</button>
+        </div>
+
+        <div id="tarifas-online" class="tab-content active">
+            <div class="pricing-card">
+                <h3>EDICIÓN + MEZCLA (ONLINE)</h3>
+                <ul>
+                    [cite_start]<li>Mezcla de 1 a 3 pistas: 50€ [cite: 58]</li>
+                    [cite_start]<li>Mezcla de 4 a 6 pistas: 90€ [cite: 59]</li>
+                    [cite_start]<li>Mezcla de 7 a 9 pistas: 130€ [cite: 60]</li>
+                    [cite_start]<li>Mezcla de 9 a 11 pistas: 160€ [cite: 61]</li>
+                    [cite_start]<li>12 pistas o más: 165€ + 10€ por pista extra [cite: 62]</li>
+                </ul>
+            </div>
+            <div class="pricing-card pack">
+                <h3>PACK: EDICIÓN + MEZCLA + MASTER (ONLINE)</h3>
+                <ul>
+                    [cite_start]<li>1 a 3 pistas: 45€ [cite: 69]</li>
+                    [cite_start]<li>4 a 6 pistas: 80€ [cite: 70]</li>
+                    [cite_start]<li>7 a 9 pistas: 110€ [cite: 71]</li>
+                    [cite_start]<li>9 a 11 pistas: 130€ [cite: 72]</li>
+                    [cite_start]<li>12 pistas o más: 135€ + 5€ por pista extra [cite: 73]</li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <h3>MASTERING (ONLINE)</h3>
+                <ul>
+                    [cite_start]<li>Master canción individual: 60€ [cite: 64]</li>
+                    [cite_start]<li>Master EP (Hasta 20 min): 50€ por tema [cite: 65]</li>
+                    [cite_start]<li>Master LP (Más de 20 min): 40€ por tema [cite: 66]</li>
+                </ul>
+                [cite_start]<p class="note">**Requisitos de Pistas:** Preferiblemente WAV, 32 bits, 48khz[cite: 44, 46, 47].</p>
+            </div>
+        </div>
+
+        <div id="tarifas-presenciales" class="tab-content">
+            <h3>PRECIO CERRADO: Grabación + Mezcla + Máster</h3>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Artistas</th>
+                        <th>Sin Instrumental a Pistas</th>
+                        <th>Con Instrumental a Pistas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 artista</td>
+                        [cite_start]<td>100€ [cite: 94]</td>
+                        [cite_start]<td>120€ [cite: 101]</td>
+                    </tr>
+                    <tr>
+                        <td>4 artistas</td>
+                        [cite_start]<td>160€ [cite: 97]</td>
+                        [cite_start]<td>180€ [cite: 104]</td>
+                    </tr>
+                    <tr>
+                        [cite_start]<td colspan="3" class="table-note">Más de 4 artistas: Se trabajará por horas (sesiones)[cite: 98, 105].</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 2rem;">PRECIO POR SESIONES (Por Hora)</h3>
+            <div class="pricing-card session-pricing">
+                <ul>
+                    [cite_start]<li>**Grabación:** 8€ / hora (Máx 3h) [cite: 113]</li>
+                    [cite_start]<li>**Edición + Mezcla:** 10€ / hora (Máx 3h) [cite: 134]</li>
+                    [cite_start]<li>**Mastering:** 20€ / hora (Máx 1h) [cite: 154]</li>
+                </ul>
+                <p class="note">**Nota:** El precio se abona por horas completas y medias. [cite_start]Ej: 2:40h (Grabación) = 24€[cite: 116].</p>
+            </div>
+        </div>
+
+        <div id="tarifas-beats" class="tab-content">
+            <div class="pricing-card">
+                <h3>TARIFAS BEATS</h3>
+                <ul>
+                    [cite_start]<li>1 beat/instrumental (Producido + mezcla en .wav): **80€** [cite: 33, 34]</li>
+                    [cite_start]<li>3 beats/instrumentales (Producido + mezcla en .wav): **200€** [cite: 35]</li>
+                    [cite_start]<li>1 beat exclusivo (en .wav y por pistas): **150€** [cite: 36]</li>
+                    [cite_start]<li>3 beats exclusivos (en .wav y por pistas): **400€** [cite: 37]</li>
+                </ul>
+                [cite_start]<p class="note">**Exclusividad:** Si se le hacen modificaciones a una instrumental de la galería, pasará a ser un beat exclusivo[cite: 39, 40].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <h2 class="section-title">Contáctanos</h2>
+        <p>¿Listo para llevar tu música al siguiente nivel? Escríbenos para presupuesto o reserva.</p>
+        <a href="mailto:tu-email@ratlab.com?subject=Consulta%20de%20Servicios%20RAT%20LAB" class="main-cta">Enviar Solicitud de Booking</a>
+        <p class="footer-note">Estudio ubicado en Barcelona.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RAT LAB | ESTUDIO | BARCELONA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Lógica para las Pestañas de Tarifas
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Desactiva todos los botones y contenidos
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                // Activa el botón clickeado y el contenido correspondiente
+                button.classList.add('active');
+                document.getElementById(button.dataset.target).classList.add('active');
+            });
+        });
+
+        // Lógica para el Menú Móvil
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
