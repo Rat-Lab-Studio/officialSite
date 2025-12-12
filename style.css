@@ -366,6 +366,12 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+/* Por defecto, no hacemos nada */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Permite scroll horizontal */
+    -webkit-overflow-scrolling: touch; /* Mejora el scroll en iOS */
+}
 
 /* ANIMACIONES */
 @keyframes fadeIn {
@@ -429,6 +435,9 @@ footer {
 
     .pricing-card {
         max-width: none;
+    }
+    .pricing-table {
+        min-width: 600px; /* Asegura un ancho mínimo para forzar el scroll en móviles */
     }
 }
 

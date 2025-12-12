@@ -168,3 +168,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+/* ----------------------------------------------------
+   NUEVA FUNCIÓN: CERRAR MENÚ MÓVIL AL HACER CLIC EN UN ENLACE
+   ---------------------------------------------------- */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navMenu = document.querySelector('.nav');
+    const navLinks = document.querySelectorAll('.nav-item');
+
+    if (navMenu && navLinks.length > 0) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Al hacer clic en cualquier enlace (nav-item),
+                // eliminamos la clase 'active' del menú principal.
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+});
