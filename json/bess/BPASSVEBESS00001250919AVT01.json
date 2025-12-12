@@ -1,0 +1,66 @@
+{
+    "general_info": {
+        "battery_passport_id": "BPASSVEBESS00001250919AVT01",
+        "bess_model": "VTA00000020V01.BESS BLOCK",
+        "batch_number": "OF0000001",
+        "serial": "BESS00001250919A"
+    },
+    "manufacturer": {
+        "name": "VectorEnergy",
+        "registered_trade_name": "SUNVEC STORAGE",
+        "postal_address": " C/ Montcada, 7 - Pol. Ind. Camp de les Pereres, 08130 Santa Perpètua de Mogoda, Barcelona",
+        "web_address": "https://vectorenergy.com/",
+        "email_address": "info@vectorenergy.com ",
+        "manufacturer_id": "ESB64702277",
+        "manufacturing_place": " C/ Montcada, 7 - Pol. Ind. Camp de les Pereres, 08130 Santa Perpètua de Mogoda, Barcelona",
+        "manufacturing_date": "19/09/25",
+        "warranty_period": ""
+    },
+    "technical_specs": {
+        "bess_category": "Industrial equipment ",
+        "bess_status": "In service",
+        "battery_type": "LiFePO4",
+        "dimensions": "2165x1240x2585(LxWxH)",
+        "weight": "3000kg",
+        "rated_capacity_ah": "314Ah",
+        "rated_energy_kwh": "230kWh",
+        "rated_ac_power": "100kW",
+        "rated_ac_voltage": "3W/(N)/PE, 400/230, 380/220 a.c. V",
+        "rated_grid_frequency": "50/60Hz",
+        "dc_voltage_range": "650-950d.c. V",
+        "ac_voltage_range": "300-460 a.c. V",
+        "max_ac_current": "182A",
+        "aux_power_input_voltage": "L/N/PE, 230, 220 a.c. V",
+        "aux_power_input_current": "10 a.c. A",
+        "aux_power_frequency": "50/60Hz",
+        "operating_temperature": "-20Cº to 45Cº",
+        "ip_rating": "IP54",
+        "cooling_method": "Air cooling(PCS&Batteries), Air conditioning climate control (BESS)",
+        "inverter_topology": "Non isolated",
+        "altitude": "2000m",
+        "testing_and_standards": "UN 38.3, EN 62619, EN IEC 61439-1, EN IEC 61439-2, EN 61000-6-2,EN IEC 61000-6-4, EN 62477-1, NTS v2.1, UNE 217002:2020,  2023/1542/EU, 2014/35/EU, 2014/30/UE "
+    },
+    "compliance_labels": {
+        "symbols_labels": [
+            "CE",
+            "WEEE",
+            "UN38.3",
+            "Refer to the instruction manual"
+        ]
+    },
+    "batpacks": [
+        "BPASSVEBPAC00008250731AVT01",
+        "BPASSVEBPAC00009250731AVT01",
+        "BPASSVEBPAC00010250731AVT01",
+        "BPASSVEBPAC00011250731AVT01",
+        "BPASSVEBPAC00012250731AVT01",
+        "BPASSVEBPAC00013250731AVT01",
+        "BPASSVEBPAC00014250731AVT01",
+        "BPASSVEBPAC00015250731AVT01",
+        "BPASSVEBPAC00016250731AVT01",
+        "BPASSVEBPAC00017250731AVT01",
+        "BPASSVEBPAC00018250731AVT01",
+        "BPASSVEBPAC00019250731AVT01",
+        "BPASSVEBPAC00020250731AVT01"
+    ]
+}

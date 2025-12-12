@@ -1,0 +1,168 @@
+{
+    "id_product_data": {
+        "bp_number": "10",
+        "battery_passport_id": "BPASSVEBPAC00017250731AVT01",
+        "model": "VTM00000021",
+        "serial": "BPAC00017250731A",
+        "batch": "OF0020003A",
+        "manufacturer": "VECTOR ENERGY GLOBAL S.L.",
+        "registered_trade_name": "SUNVEC STORAGE",
+        "address": "C/ Montcada, 7 - Pol. Ind. Camp de les Pereres, 08130 Santa Perpètua de Mogoda, Barcelona",
+        "web_address": "https://vectorenergy.com/",
+        "mail_address": "info@vectorenergy.com",
+        "NIF": "ESB64702277",
+        "manufacturing_place": "C/ Montcada, 7 -  Pol. Ind. Camp de les Pereres, 08130 Santa Perpètua de Mogoda, Barcelona",
+        "manufacturing_date": "31/07/25",
+        "date_of_putting_into_service": "29/10/25",
+        "warranty_period": "",
+        "battery_category": "Industrial battery - stationary battery for energy storage system",
+        "battery_weight": "150 Kg",
+        "battery_status": "Original"
+    },
+    "symbols_labels_doc_conformity": {
+        "symbols_labels": [
+            "CE",
+            "WEEE",
+            "UN38.3",
+            "Cd",
+            "Pb"
+        ],
+        "meaning": "CE: European Conformity, WEEE: Waste Electrical & Electronic Equipment, UN38.3: Transport Safety, Cd: Contains Cadmium, Pb: Contains Lead",
+        "CE_doc": "https://manelVector.github.io/battery-passport/contact.html",
+        "extinguishing agent": "Hydrocarbon surfactant, CO2",
+        "carbon_footprint_label": " kg CO<sub>2</sub>eq",
+        "test_compliance": "https://manelVector.github.io/battery-passport/contact.html"
+    },
+    "battery_carbon_footprint": {
+        "carbon_footprint": "73.9526 KgCO2e/kWh",
+        "raw_material_acquisition_and_pre_processing_lifecycle_stage": "78,49%",
+        "main_product_production/manufacturing_lifecycle_stage": "11,38%",
+        "distribution_lifecycle_stage": "0,75%",
+        "end_of_life_and_recycling_lifecycle_stage": "9,39%",
+        "carbon_footprint_performance_class": "",
+        "study_weblink": "https://manelVector.github.io/battery-passport/contact.html"
+    },
+    "supply_chain_due_diligence": {
+        "Information_of_due_diligence_report": ""
+    },
+    "battery_materials_and_composition": {
+        "battery_chemistry": "LiFePO4 (Lithium Iron Phosphate)",
+        "critical_raw_materials": [
+            "Lithium (Li)",
+            "Graphite (C)",
+            "Copper (Cu)",
+            "Aluminium (Al)",
+            "Nickel (Ni)"
+        ],
+        "materials_used": {
+            "cathode": "LiFePO4",
+            "anode": "Grafito",
+            "electrolyte": "LiPF6"
+        },
+        "hazardous_substances": [
+            "Niquel"
+        ],
+        "impact": "Environment impact: Do not allow product to reach sewage system or any water source. Inform respective authorities in case of seepage into water course or sewage system. Do not allow to enter sewers/ surface or ground water. Health and safety risks: Risk of fire or explosion due to short circuit. Electrolyte leaks are toxic and corrosive. Risks of improper disposal: If the battery is thrown away as unsorted municipal waste, it can cause fires and expose people and the environment to hazardous situations. Risks related to hazardous substances (Ni): H351 – Suspected of causing cancer state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard H317 – May cause an allergic skin reaction. "
+    },
+    "circularity_and_resource_efficiency": {
+        "dismantling_information": {
+            "manuals": "https://manelVector.github.io/battery-passport/contact.html",
+            "part_numbers": "https://manelVector.github.io/battery-passport/contact.html",
+            "spare_parts_sources": "https://manelVector.github.io/battery-passport/contact.html",
+            "safety_measures": "https://manelVector.github.io/battery-passport/contact.html"
+        },
+        "pre_consumer_recycled_content": {
+            "nickel_share": "0%",
+            "cobalt_share": "0%",
+            "lithium_share": "0%",
+            "lead_share": "0%"
+        },
+        "post_consumer_recycled_content": {
+            "nickel_share": "0%",
+            "cobalt_share": "0%",
+            "lithium_share": "0%",
+            "lead_share": "0%"
+        },
+        "renewable_content_share": "5%",
+        "end_user_role_in_waste_prevention": "https://manelVector.github.io/battery-passport/contact.html",
+        "end_user_separate_collection_role": "https://manelVector.github.io/battery-passport/contact.html",
+        "battery_collection_and_end_of_life": "https://manelVector.github.io/battery-passport/contact.html"
+    },
+    "performance_and_durability": {
+        "voltage_and_power": {
+            "state_of_charge": "47%",
+            "minimum_voltage": "50 V",
+            "maximum_voltage": "73 V",
+            "nominal_voltage": "64 V",
+            "rated_capacity": "314 Ah",
+            "remaining_capacity": "280 Ah",
+            "original_power_capability": "17,9 kWh",
+            "remaining_power_capability": "17,9 kWh",
+            "power_fade": "0,2%",
+            "maximum_permitted_battery_power": "17,9kW, 25Cº "
+        },
+        "energy_efficiency": {
+            "initial_round_trip_efficiency": "> 94% ",
+            "round_trip_efficiency_at_50pct_cycle_life": "> 85%",
+            "remaining_round_trip_efficiency": "94,75%(25ºC)",
+            "energy_round_trip_efficiency_fade": "0,1%"
+        },
+        "self_discharge_and_resistance": {
+            "self_discharge_rate_evolution": "1%",
+            "initial_internal_resistance_cell": "2,55mOhms",
+            "initial_internal_resistance_pack": "0,06 Ohms",
+            "internal_resistance_increase_pack": "0%"
+        },
+        "lifetime": {
+            "expected_calendar_life_years": "13 years",
+            "expected_cycle_life": "10000 ciclos",
+            "number_of_full_cycles": "16",
+            "cycle_life_reference_test": "25ºC 50V to 73V",
+            "c_rate_cycle_life_test": "0,5C",
+            "capacity_fade": "19,6 % in 5000 Cycles "
+        },
+        "temperature_and_throughput": {
+            "energy_throughtput": "286,4 kWh",
+            "capacity_throughput": "4480Ah",
+            "temperature_information": "22,4 °C",
+            "temperature_idle_range": {
+                "lower_boundary": "-30 °C",
+                "upper_boundary": "60 °C"
+            },
+            "time_above_upper_boundary": "0 min",
+            "time_below_lower_boundary": "0 min",
+            "time_charging_above_boundary": "0 min",
+            "time_charging_below_boundary": "0 min"
+        },
+        "events_and_safety": {
+            "number_of_deep_discharge_events": "0",
+            "number_of_overcharge_events": "0",
+            "accidents_information": "0"
+        }
+    },
+    "cell_info": {
+        "cell_model": "LITH",
+ "cells_id":[
+  "MAIYSW7Q2D",
+  "66O63W5HRI",
+  "ZI4T2I29PE",
+  "ETFWKR0IVX",
+  "L1QZVVDCDH",
+  "0AQ6L3MKOW",
+  "S4A9XFY1IK",
+  "6D9DSL1HGS",
+  "H0FS67NT5M",
+  "AAC1HPBO3G",
+  "2WBWZ2YG13",
+  "YPX802TMGQ",
+  "2SS4NVJDX3",
+  "K6DFCRC2G4",
+  "O5WSTD7OLR",
+  "RAXH5HAGRC",
+  "DE19CFEUFV",
+  "S0GCDY5QP2",
+  "DL5KGWNLF2",
+  "5FE0V9S0KY"
+]
+    }
+}

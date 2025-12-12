@@ -1,0 +1,513 @@
+/* ========= RESET & BASE ========= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: #F2F2F7;
+  color: #333F49;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ========= LAYOUT PRINCIPAL ========= */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* ========= HEADER ADAPTABLE ========= */
+header {
+  width: 100%;
+  height: 80px;
+  background: url('media/banner-pc.svg') no-repeat top left;
+  background-size: cover;
+  align-items: left;
+  
+}
+
+
+.main-layout {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  max-width: 1600px;
+  width: 100%;
+  background: none;
+  animation: aparecer 0.8s ease-out forwards;
+}
+
+/* ========= FOOTER ========= */
+footer {
+  background: #fff;
+  color: #333F49;
+  padding: 1rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  font-size: 0.95rem;
+
+}
+
+footer .icons img {
+  height: 24px;
+  margin: 0 8px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+footer .icons img:hover {
+  opacity: 1;
+}
+
+footer .small-text {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+footer .socials {
+  display: flex;              /* activa flexbox */
+  align-items: center;        /* centra verticalmente */
+  justify-content: center;/* todo alineado a la izquierda */
+  gap: 1rem;                  /* espacio entre texto e íconos */
+  padding: 0 1rem;            /* opcional, para no pegar al borde */
+}
+
+footer .icons {
+  display: flex;
+  gap: 0.5rem;                /* espacio entre íconos */
+}
+
+footer .small-text {
+  margin: 0;                  /* quita margen superior que hacía que bajara */
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.centered-content{
+  align-self: center;
+  padding-top: 1px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+
+/* ========= ANIMACIONES ========= */
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========= GRID LAYOUT DEL RENDER ========= */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "frame1 interactive"
+    "frame2 interactive";
+  gap: 1rem;
+  height: calc(100vh - 180px); /* espacio sin header/footer */
+  overflow: hidden;
+}
+
+/* Asignar las áreas */
+.container .frame:nth-of-type(1) {
+  grid-area: frame1;
+}
+
+.container .frame:nth-of-type(2) {
+  grid-area: frame2;
+}
+
+.container .interactive {
+  grid-area: interactive;
+}
+
+
+.frame{
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.row-centered {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 0px solid #eee;
+}
+
+.label {
+  font-weight: 600;
+  flex: 1;
+  color: #333F49;
+}
+
+.value {
+  flex: 1;
+  text-align: right;
+  color: #555;
+  word-break: break-word;
+}
+
+/* ========= ACORDEONES ========= */
+.accordion {
+  margin-bottom: 1rem;
+
+}
+.accordion-cells {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column-reverse; /* 👈 invierte el orden visual */
+  border: 0px solid #333F49;
+  border-radius: 6px;
+  overflow: visible;
+  position: relative;
+  z-index: 20;
+}
+
+.accordion-title-cells {
+  position: absolute;
+  min-width: 200px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-right: 30px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  position: relative;
+  background: #fff;
+  z-index: 21;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.2s, box-shadow 0.2s ease;
+  margin: 5px;
+  margin-top: 40px;
+  right: -70px;
+  bottom: -25px;
+
+  /* 👇 Sombra suave pero más marcada abajo y a la derecha */
+  box-shadow:
+    2px 2px 6px rgba(0, 0, 0, 0.25),  /* sombra principal abajo/derecha */
+    0px 0px 4px rgba(0, 0, 0, 0.1);   /* difuminado suave alrededor */
+}
+
+
+.accordion-title {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #333F49;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.accordion-title-cells::after, 
+.accordion-title::after {
+  content: "⌵";
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.accordion-title-cells.active::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+
+.accordion-content {
+  bottom: 100%;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  transition: max-height 0.3s ease;
+}
+/* === CONTENIDO QUE SE ABRE HACIA ARRIBA === */
+.accordion-content-cells {
+  position: absolute;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 1rem;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-right: 7px;
+  margin-top: 10px;
+  bottom: calc(55% + 5px);
+  right: -70px;
+  bottom: 25px;
+  background: #fff;
+  z-index: 20; /* capa superior */
+}
+.accordion-content-cells.open {
+  max-height: 180px; /* 👈 altura visible del panel */
+  opacity: 1;
+  overflow-y: auto;   /* 👈 scroll interno cuando hay mucho contenido */
+  scroll-behavior: smooth;
+  
+}
+
+/* Scrollbar general para frame y acordeón */
+.frame::-webkit-scrollbar,
+.accordion-content-cells::-webkit-scrollbar {
+  width: 16px;               /* ancho total de la barra */
+  background: transparent;   /* fondo de la scrollbar */
+}
+
+/* Thumb (el “pulsador” que se mueve) */
+.frame::-webkit-scrollbar-thumb,
+.accordion-content-cells::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa; /* color del thumb */
+  border-radius: 8px;        /* redondeado */
+  border: 4px solid transparent; /* crea margen interno visual */
+  background-clip: content-box;  /* respeta el borde como margen */
+}
+
+/* Hover: resaltar la barra al pasar el ratón */
+.frame::-webkit-scrollbar-thumb:hover,
+.accordion-content-cells::-webkit-scrollbar-thumb:hover {
+  background-color: #888888;
+}
+
+/* Track (el fondo de la barra) */
+.frame::-webkit-scrollbar-track,
+.accordion-content-cells::-webkit-scrollbar-track {
+  background: transparent; /* sin color de fondo */
+}
+.cell-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333F49;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 
+    background-color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.25s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  user-select: none;
+  width: 100%;
+}
+
+/* Hover (cuando el puntero pasa encima) */
+.cell-button:hover {
+  background-color: #F69240;
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* Active (cuando haces clic) */
+.cell-button:active {
+  background-color: #F69240;
+  transform: translateY(0);
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+.accordion-content.open {
+  max-height: 2000px;
+}
+/* Estilo opcional para los botones */
+.row-cells {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.symbols {
+  max-width: 40px;
+  height: auto;
+  margin: 4px;
+}
+.back-icon {
+    position: absolute;
+    top: 3%;
+    left: 96%;
+    width: 21px;
+    height: auto;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.2s;
+}
+
+.back-icon:hover {
+  opacity: 0.7;
+}
+
+
+.interactive {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+  display: flex;  
+  flex-direction: column;           /* contenedor flex horizontal */
+  justify-content: center; /* espacio entre izquierda y derecha */
+  align-items: center;       /* centra verticalmente */
+  position: relative;        /* para posicionar la imagen extra absoluta */
+  overflow: hidden ;
+}
+
+
+
+.interactive_img_bess{
+  width: 70%;      /* tu tamaño reducido */
+  height: auto;
+  display: block;
+  margin: 0 auto;  /* centra horizontalmente */
+  object-fit: contain;
+}
+
+.interactive_img_cell{
+  width: 50%;      /* tu tamaño reducido */
+  height: auto;
+  justify-self: center;
+  object-fit: contain;
+}
+.interactive_img_bp{
+  width: 100%;      /* tu tamaño reducido */
+  height: auto;
+  display: block;
+  margin: 0 auto;  /* centra horizontalmente */
+  object-fit: contain;
+}
+/* ======== MEDIA QUERY MÓVIL ======== */
+/* ========= MEDIA QUERY MÓVIL ========= */
+@media (max-width: 768px) {
+  /* Header */
+    header {
+        width: 101%;
+        height: auto;
+        min-height: 49px;
+        background: url(media/banner-mobile.svg) no-repeat center top;
+        background-size: cover;
+        background-position: left;
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: -4px;
+        margin-left: -3px;
+    }
+
+
+  /* Main layout: flujo vertical */
+  .main-layout {
+    flex-direction: column;
+    padding: 0.5rem;
+    overflow: visible; /* permite scroll */
+  }
+
+  /* Container: sin grid, solo bloques verticales */
+  .container {
+    display: block;   /* elimina grid */
+    height: auto;     /* altura automática según contenido */
+    overflow: visible;
+    gap: 1rem;        /* separación entre frames */
+  }
+
+  .container .frame {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    overflow: visible; /* quitar scroll interno */
+    padding: 1rem;
+  }
+
+  .interactive {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .interactive_img_bess {
+    width: 100%;      /* tamaño más grande en móvil */
+    max-width: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .interactive_img_bp {
+    width: 100%;      /* tamaño más grande en móvil */
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Footer */
+  footer .socials {
+    flex-direction: column; /* texto arriba, íconos debajo */
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  footer .icons {
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  footer .small-text {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+.back-icon {
+  position: fixed;    /* 👈 se alinea al viewport, no al contenedor */
+  top: 12px;
+  left: 90%;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  z-index: 9999;      /* 👈 por si hay capas encima */
+}
+
+  .back-icon:hover {
+    opacity: 0.7;
+  }
+
+}
+
