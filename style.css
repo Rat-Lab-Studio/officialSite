@@ -1,11 +1,13 @@
-/* Variables CSS */
+/* Variables CSS - CORREGIDO: Usando fuentes del sistema */
 :root {
     --primary-color: #00ff6a; /* Verde neón/lima para CTA */
     --secondary-color: #1a1a1a; /* Gris oscuro/azul para fondo de cards */
     --background-color: #232f3a; /* Fondo muy oscuro */
     --text-color: #ecf0f1; /* Texto claro */
-    --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Oswald', sans-serif;
+    
+    /* Fuentes del sistema para evitar Google Fonts y mantener el look moderno */
+    --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-secondary: "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Base */
@@ -165,7 +167,8 @@ a:hover {
 .main-cta {
     display: inline-block;
     background-color: var(--primary-color);
-    color: #111;
+    /* Color de texto del CTA CORREGIDO a negro para contraste */
+    color: #000000; 
     padding: 1rem 2rem;
     border-radius: 8px;
     font-weight: bold;
@@ -175,7 +178,7 @@ a:hover {
 }
 
 .main-cta:hover {
-    color:#000000;
+    color: #000000; 
     background-color: #4CAF50;
     transform: translateY(-3px);
 }
@@ -236,12 +239,21 @@ a:hover {
     animation: fadeIn 0.5s;
 }
 
-.tab-content.active {
-    display: flex;
+/* CORRECCIÓN CLAVE: Definimos el layout principal de las pestañas */
+#tarifas-online.active, 
+#tarifas-beats.active {
+    /* Estas pestañas usan layout horizontal de tarjetas */
+    display: flex; 
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
 }
+
+#tarifas-presenciales.active {
+    /* Esta pestaña usa layout vertical de bloque para la tabla y títulos */
+    display: block; 
+}
+
 
 .pricing-card {
     background-color: var(--secondary-color);
@@ -252,6 +264,12 @@ a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
 }
+
+/* Aseguramos que la tarjeta de Normativas Online sea siempre ancha */
+#tarifas-online .pricing-card[style*="max-width: 100%"] {
+    max-width: 100% !important;
+}
+
 
 .pricing-card.pack {
     border: 3px solid var(--primary-color);
@@ -337,7 +355,11 @@ footer {
     color: #95a5a6;
 }
 
-/* Añadir a style.css */
+.legal-nav {
+    margin-bottom: 10px; 
+    font-size: 0.9rem;
+}
+
 .copy-container {
     margin-top: 2rem;
     display: flex;
@@ -415,22 +437,9 @@ footer {
         font-size: 2rem;
     }
     .main-cta {
-      
         padding: 0.8rem 1.5rem;
     }
     .tabs {
         flex-wrap: wrap;
     }
-}
-
-/* Añadir al final de style.css */
-#tarifas-presenciales {
-    display: block !important; /* Fuerza la verticalidad total */
-}
-
-/* Además, asegúrate de que el contenedor de la tabla tenga ancho completo */
-#tarifas-presenciales #table-precio-cerrado {
-    width: 100%;
-    margin-bottom: 2rem;
-    align-self: auto;
 }
