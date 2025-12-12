@@ -1,0 +1,62 @@
+{
+    "tarifas_beats": [
+        {"desc": "1 beat/instrumental (Producido + mezcla en .wav)", "precio": "80€"},
+        {"desc": "3 beats/instrumentales (Producido + mezcla en .wav)", "precio": "200€"},
+        {"desc": "1 beat exclusivo (en .wav y por pistas)", "precio": "150€"},
+        {"desc": "3 beats exclusivos (en .wav y por pistas)", "precio": "400€"}
+    ],
+    "tarifas_online_mezcla": [
+        {"rango": "1 a 3 pistas", "precio": "50€"},
+        {"rango": "4 a 6 pistas", "precio": "90€"},
+        {"rango": "7 a 9 pistas", "precio": "130€"},
+        {"rango": "9 a 11 pistas", "precio": "160€"}
+    ],
+    "tarifas_online_pack": [
+        {"rango": "1 a 3 pistas", "precio": "45€"},
+        {"rango": "4 a 6 pistas", "precio": "80€"},
+        {"rango": "7 a 9 pistas", "precio": "110€"},
+        {"rango": "9 a 11 pistas", "precio": "130€"}
+    ],
+    "mastering": [
+        {"desc": "Master canción individual", "precio": "60€"},
+        {"desc": "Master EP (Hasta 20 min)", "precio": "50€ por tema"},
+        {"desc": "Master LP (Más de 20 min)", "precio": "40€ por tema"}
+    ],
+    "presenciales_precio_cerrado": {
+        "sin_pistas": [
+            {"artistas": "1 artista", "precio": "100€"},
+            {"artistas": "2 artistas", "precio": "120€"},
+            {"artistas": "3 artistas", "precio": "140€"},
+            {"artistas": "4 artistas", "precio": "160€"}
+        ],
+        "con_pistas": [
+            {"artistas": "1 artista", "precio": "120€"},
+            {"artistas": "2 artistas", "precio": "140€"},
+            {"artistas": "3 artistas", "precio": "160€"},
+            {"artistas": "4 artistas", "precio": "180€"}
+        ],
+        "grabacion_suelta": [
+            {"desc": "Sesiones obligatorias de 2 horas", "precio": "40€/h sesión"},
+            {"desc": "Sesiones obligatorias de 2 horas", "precio": "60€/h con gain staging"}
+        ]
+    },
+    "presenciales_por_sesiones": [
+        {"servicio": "Grabación", "precio_h": "8€", "max_h": "3h", "ej_2_40h": "24€", "nota": "Plus de 2€/pista (>10 pistas) o 2€/h por vocalista/instrumento extra."},
+        {"servicio": "Edición + Mezcla", "precio_h": "10€", "max_h": "3h", "ej_2_40h": "30€", "nota": "Tiempo medio: 3 sesiones (90€) con instrumental a pistas."},
+        {"servicio": "Mastering", "precio_h": "20€", "max_h": "1h", "ej_2_40h": "20€", "nota": "Mastering individual: 0.5h (10€). Album: 2h cada 3 temas (40€)."}
+    ],
+    "online_normativas": {
+        "archivos": [
+            {"req": "Formato", "pref": "WAV", "nota": "Preferiblemente. No se garantiza calidad total con otras extensiones."},
+            {"req": "Tasa de Bits", "pref": "32 bits", "nota": "Opción preferente. 24 bits aceptable."},
+            {"req": "Frecuencia", "pref": "48kHz", "nota": "Preferente. 44.1Khz solo si el producto NO va a plataformas de streaming."},
+            {"req": "Baja Calidad (MP3)", "pref": "16 bits", "nota": "Si se envían archivos MP3 o similares, la tasa de bits ha de ser 16."}
+        ],
+        "entrega": [
+            {"item": "Exportación General", "desc": "WAV, 32 bits, 48Khz por defecto, salvo que se especifique lo contrario."},
+            {"item": "Mastering", "desc": "Cada Máster se envía por separado."},
+            {"item": "Exportación Conjunta (LP/EP)", "desc": "Se debe especificar al inicio y conlleva un coste extra a la tarifa final."},
+            {"item": "Mezcla (Grupos)", "desc": "Se envían las pistas finales ya procesadas en grupos (ej. voces principales juntas)."}
+        ]
+    }
+}
